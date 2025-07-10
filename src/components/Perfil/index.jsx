@@ -1,9 +1,16 @@
 import styles from './Perfil.module.css'
 
-const Perfil = ({ nomeUsuario }) => {
+const Perfil = ({ nomeUsuario, valorBusca, onChangeBusca }) => {
     return (
         <header className={styles.header} >
-            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} alt="Avatar do Usuário" />
+            <input
+                type="text"
+                className={styles.inputBusca}
+                placeholder="Buscar usuário"
+                value={valorBusca}
+                onChange={onChangeBusca}
+            />
+            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} />
             <h1 className={styles.name}>
                 {nomeUsuario}
             </h1>

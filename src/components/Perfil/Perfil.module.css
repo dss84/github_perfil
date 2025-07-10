@@ -1,20 +1,40 @@
 .header {
-    background-color: var(--corPrincipal);
+    width: 100vw;      /* ocupa toda a largura da viewport */
+    height: 40vh;    /* altura de 20% da viewport */
+    left: 0%;
+    right: 50%;
+    margin-left: calc(-50vw + 50%);
+    margin-right: -50vw;
+    margin-bottom: 2%;
+    position: relative;
+    background: #f9cb2d;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 180px 0 40px;
-    margin-bottom:80px;
+    justify-content: center; /* centraliza verticalmente */
+    padding: 40px 0;
 }
 
 .avatar {
     width: 160px;
     height: 160px;
     border-radius: 50%;
-    border: 2px solid var(--corSecundaria);
+    border: 2px solid var(--corSecundaria);;
 }
 
 .name {
     font-size: 18px;
     color: var(--corSecundaria);
+}
+
+.inputBusca {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0.5em;
+    margin-bottom: 50px;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) -2px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
